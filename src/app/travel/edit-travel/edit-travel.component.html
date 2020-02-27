@@ -1,0 +1,29 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Editar Viagem</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="hidden">
+      <input type="text" formControlName="travelId" placeholder="travelId" name="travelId" class="form-control" id="travelId" readonly="true">
+    </div>
+    <div class="form-group">  
+      <label for="nome">Nome:</label>
+      <input type="text" formControlName="nome" placeholder="nome" name="nome" class="form-control" id="nome">
+    </div>
+
+    <div class="form-group">
+      <label for="origem">Origem:</label>
+      <input formControlName="origem" placeholder="origem" name="origem" class="form-control" id="origem">
+    </div>
+
+    <div class="form-group">
+      <label for="destino">Destino:</label>
+      <input formControlName="destino" placeholder="destino" name="destino" class="form-control" id="destino">
+    </div>
+
+    <div class="form-group">
+      <label for="dataViagem">Data/Hora:</label>
+      <input id="dataViagem" formControlName="dataViagem" placeholder="dataViagem" name="dataViagem" type="datetime-local" class="form-control">
+    </div>
+
+    <button class="btn btn-success">Atualizar</button>
+  </form>
+</div>
