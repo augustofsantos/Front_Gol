@@ -7,4 +7,5 @@ Modo de inicializar:
 - Abrir projeto pelo Visual Studio Code
 - Executar comando "npm install"
 - Executar comando "ng serve" e aguardar projeto subir.
+- Sistema deverá executar sobre http://localhost:4200/
 
